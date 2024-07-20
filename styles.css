@@ -1,0 +1,27 @@
+@font-face {
+    font-family: MyFont;
+    src: url(Drawrite.ttf);
+}
+
+.title {
+    font-family: MyFont;
+    text-align: center;
+    font-size: 75px;
+}
+
+
+.art-pad {
+    height: 500px;
+    width: 500px;
+    border: 2px solid black
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 10vh;
+    text-align: center;
+}
