@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js" defer> </script>
-    <link href="styles.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <link href="styles.css" rel="stylesheet" />
     <title>Etch-A-Sketch</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 class="title">Etch-A-Sketch</h1>
     <div class="container">
-    <div class="art-pad"></div>
+      <input id="enterSize" placeholder="Grid Size" />
+    </div>
+    <div class="art-pad">
+
+    <div class="gridcontainer">
+      <div class="grid">
+        <!-- This is where our squares will go -->
+      </div>
+    </div>
     </div>
 
+    <div class="container">
+        <button id="resetButton">Reset Grid</button>
+    </div>
 
-    <footer> Made by Ramy </footer>
-</body>
+    <footer>Made by Ramy</footer>
+  </body>
 </html>
