@@ -9,7 +9,7 @@ function createGrid(size) {
   grid.style.display ='flex';
   grid.style.flexWrap = 'wrap';
 
-  for (let i = 0; i < size; i++) {
+  for (let i = 0; i < (size^2); i++) {
     const square = document.createElement("div");
     square.classList.add("square");
     square.style.border = "1px solid black";
