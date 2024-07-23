@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Schoolbell&display=swap');
-
-
 body {
     background-color: lightblue;
 }
@@ -28,5 +26,11 @@ margin-bottom: 10px;
 display: flex;
 justify-content: center;
 gap: 5px;
-margin-bottom: 35px;
+margin-bottom: 30px;
+}
+
+footer {
+  text-align: center;
+  justify-content: center;
+  font-family: "Schoolbell", cursive;
 }
