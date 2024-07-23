@@ -10,6 +10,10 @@ board.style.gridTemplateColumns = `repeat(${sizeValue}, 1fr)`;
 board.style.gridTemplateRows = `repeat(${sizeValue}, 1fr)`;
 
 setSize.addEventListener("click", () => {
+  if (size.value > 100) {
+    alert("The Sketchpad's maxium size is 100!");
+    size.value = "";
+  } else {
     let sizeValue = size.value;
     board.style.gridTemplateColumns = `repeat(${sizeValue}, 1fr)`;
     board.style.gridTemplateRows = `repeat(${sizeValue}, 1fr)`;
@@ -23,10 +27,10 @@ setSize.addEventListener("click", () => {
         square.style.backgroundColor = `${selectedColor}`;
       });
       square.classList.add("square");
-      board.appendChild(square);
+       board.appendChild(square);
     }
   }
-);
+});
 reset.addEventListener("click", function () {
   const squares = document.querySelectorAll(".square");
   squares.forEach(function (square) {
