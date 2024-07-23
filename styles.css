@@ -1,43 +1,32 @@
-@font-face {
-    font-family: MyFont;
-    src: url(Drawrite.ttf);
-  }
-  
-  .title {
-    font-family: MyFont;
-    text-align: center;
-    font-size: 75px;
-  }
-  
-  .row {
-    height: 80px;
-    width: 80px;
-  }
-  
-  .grid {
-    height: 500px;
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Schoolbell&display=swap');
+
+
+body {
+    background-color: lightblue;
+}
+.board {
     width: 500px;
-    border: 2px solid black;
-    display: flex;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-  }
-  
-  #enterSize {
-    height: 20px;
-  }
-  
-  .art-pad {
-    display: flex;
-    justify-content: center;
-  }
-  
-  footer {
-    margin-top: 10vh;
-    text-align: center;
-  }
-  
+    height: 500px;
+    display: grid;
+    border: 1px solid black;
+    box-shadow: 1px 3px 8px rgb(0, 0, 0);
+}
+
+.title {
+display: flex;
+justify-content: center;
+font-family: "Schoolbell", cursive;
+}
+
+.content {
+display: flex;
+justify-content: center;
+margin-bottom: 10px;
+}
+
+.customization {
+display: flex;
+justify-content: center;
+gap: 5px;
+margin-bottom: 35px;
+}
