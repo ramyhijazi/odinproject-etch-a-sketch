@@ -10,22 +10,14 @@ function createGrid(size) {
   grid.style.flexWrap = "wrap";
 
   for (let i = 0; i < size; i++) {
-    const row = document.createElement("div");
-    row.classList.add("row");
-    
-    for (let j=0; j<size; j++) {
-      const cell = document.createElement("div");
-      cell.classList.add("cell");
-      cell.style.border = '1px solid black';
-      row.appendChild(cell);
-    }
-    row.style.border = '1px solid black';
-    grid.appendChild(row);
-
-  }
-
-
-
+    const square = document.createElement("div");
+    square.classList.add("square");
+    square.style.border = "1px solid black";
+    square.style.height = '9%';
+    square.style.width =  '9%'
+    square.style.flexShrink = 1;
+    square.style.flexGrow = 1;
+    grid.appendChild(square);
     // Use an eventListener to listen for a click on the grid
     const squaresNodeList = document.querySelectorAll(".row");
     squaresNodeList.forEach((square) => {
