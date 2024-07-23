@@ -1,49 +1,43 @@
 @font-face {
     font-family: MyFont;
     src: url(Drawrite.ttf);
-}
-
-.title {
+  }
+  
+  .title {
     font-family: MyFont;
     text-align: center;
     font-size: 75px;
-}
-
-
-.gridcontainer {
-    width: 500px;
+  }
+  
+  .row {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .grid {
     height: 500px;
-    max-width: 500px;
-    max-height: 500px;
-}
-
-.grid {
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+    width: 500px;
     border: 2px solid black;
-}
-
-.container {
+    display: flex;
+  }
+  
+  .container {
     display: flex;
     justify-content: center;
     margin: 10px;
-}
-
-#enterSize {
+  }
+  
+  #enterSize {
     height: 20px;
-}
-
-
-.art-pad {
+  }
+  
+  .art-pad {
     display: flex;
     justify-content: center;
-}
-
-footer {
+  }
+  
+  footer {
     margin-top: 10vh;
     text-align: center;
-}
+  }
+  

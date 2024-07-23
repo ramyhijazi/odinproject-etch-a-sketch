@@ -3,28 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="index.js" defer></script>
-    <link href="styles.css" rel="stylesheet" />
-    <title>Etch-A-Sketch</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <title>Document</title>
   </head>
   <body>
-    <h1 class="title">Etch-A-Sketch</h1>
-    <div class="container">
-      <input id="enterSize" placeholder="Grid Size" />
-    </div>
-    <div class="art-pad">
-
-    <div class="gridcontainer">
-      <div class="grid">
-        <!-- This is where our squares will go -->
+    <div class="flex-container">  
+      <div class="title"><h1>My Sketchpad</h1></div>
+      <div class="content">
+        <div class="board"></div>
+      </div>
+      <div class="customization">
+        <div class="buttons">
+          <select class="colorChoice">Colors!
+            <option value="Black">Black (Default)</option>
+            <option value="Red">Red</option>
+            <option value="Orange">Orange</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+            <option value="Purple">Purple</option>
+            <option value="Pink">Pink</option>
+          </select>
+          
+          <button class="reset">Reset</button>
+        </div>
+        <div>
+          <input class="size" type="text" placeholder="Size" value="16"/>
+          <button class="setsize">Set Size</button>
+        </div>
       </div>
     </div>
-    </div>
-
-    <div class="container">
-        <button id="resetButton">Reset Grid</button>
-    </div>
-
-    <footer>Made by Ramy</footer>
+  <footer> Made by Ramy </footer>
+  <footer> Visit <a href="https://github.com/ramyhijazi" target="_blank">my Github!</a> </footer>
   </body>
 </html>

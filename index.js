@@ -6,27 +6,35 @@ function createGrid(size) {
   // CLear the existing grid
   grid.innerHTML = "";
 
-  grid.style.display ='flex';
-  grid.style.flexWrap = 'wrap';
+  grid.style.display = "flex";
+  grid.style.flexWrap = "wrap";
 
   for (let i = 0; i < size; i++) {
-    const square = document.createElement("div");
-    square.classList.add("square");
-    square.style.border = "1px solid black";
-    square.style.height = '9%';
-    square.style.width =  '9%'
-    square.style.flexShrink = 1;
-    square.style.flexGrow = 1;
-    grid.appendChild(square);
+    const row = document.createElement("div");
+    row.classList.add("row");
+    
+    for (let j=0; j<size; j++) {
+      const cell = document.createElement("div");
+      cell.classList.add("cell");
+      cell.style.border = '1px solid black';
+      row.appendChild(cell);
+    }
+    row.style.border = '1px solid black';
+    grid.appendChild(row);
+
+  }
+
+
+
     // Use an eventListener to listen for a click on the grid
-    const squaresNodeList = document.querySelectorAll(".square");
+    const squaresNodeList = document.querySelectorAll(".row");
     squaresNodeList.forEach((square) => {
       square.addEventListener("click", () => {
         square.style.backgroundColor = "black";
       });
     });
   }
-}
+
 
 // Get the users input for the size of the grid.
 const sizeInput = document.getElementById("enterSize");
